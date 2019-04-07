@@ -61,7 +61,7 @@ if [ ! -f "$WG_CONFIG" ]; then
     fi
 
     if [ "$SERVER_PORT" == "" ]; then
-        SERVER_PORT=$( get_free_udp_port )
+        SERVER_PORT="443"
     fi
 
     if [ "$CLIENT_DNS" == "" ]; then
